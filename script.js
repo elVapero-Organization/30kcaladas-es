@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+﻿document.addEventListener('DOMContentLoaded', function () {
     // --- Mobile Menu Toggle ---
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
@@ -181,7 +181,7 @@ if (warn) {
 
 
 const city = document.getElementById("city");
-const cont = document.querySelectorAll(".foot-cont-three a");
+const cont = document.querySelectorAll(".foot-cont-three > span, .foot-cont-three > p");
 city.addEventListener("click", toggleCont);
 function toggleCont() {
     city.classList.toggle("active");
@@ -194,3 +194,4 @@ const yearSpan = document.querySelector('#year');
 if (yearSpan) {
     yearSpan.innerText = new Date().getFullYear();
 }
+
